@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+      }
+      .email-heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .email-body {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .email-footer {
+        margin-top: 30px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-body">
+        <p>Hello,</p>
+        <p>
+            Hello, we have found your survey. Here are the details:
+        </p>
+        <ul>
+          <li>Survey number: {{ survey_id }}</li>
+          <li>
+            Survey Link: <a href="{{ survey_link }}">{{ survey_link }}</a>
+          </li>
+        </ul>
+        <p>Thank you.</p>
+      </div>
+      <p class="email-footer">Company.</p>
+    </div>
+  </body>
+</html>
